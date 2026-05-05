@@ -55,6 +55,7 @@ docker stop container1
 docker rm container1
 docker ps -a
 ```
+![Screenshot 1](https://raw.githubusercontent.com/Marco-Essam25/iVolve-Internship/main/screenshots/Screenshot-lab3-2.png)
 
 ## Result
 ✅ Java Spring Boot app successfully containerized and running on port 8080.

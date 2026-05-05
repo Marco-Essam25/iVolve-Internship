@@ -3,6 +3,15 @@
 ## Objective
 Containerize a Java Spring Boot application using Docker with Maven and Java 17.
 
+## Project Structure
+Lab3/
+├── Dockerfile
+├── pom.xml
+├── src/
+│   └── main/java/com/example/demo/
+│       └── DemoApplication.java
+└── README.md
+
 ## Steps
 
 ### 1. Clone the Application Code
@@ -11,24 +20,13 @@ git clone https://github.com/Ibrahim-Adel15/Docker-1.git
 cd Docker-1
 ```
 
-### 2. Dockerfile
+### 2. Write the Dockerfile
 ```dockerfile
-# Use Maven base image with Java 17
 FROM maven:3.9.6-eclipse-temurin-17
-
-# Create working directory
 WORKDIR /app
-
-# Copy the application source code into the container
 COPY . .
-
-# Build the app using mvn package
 RUN mvn package -DskipTests
-
-# Expose port 8080
 EXPOSE 8080
-
-# Run the app on jar file
 CMD ["java", "-jar", "target/demo-0.0.1-SNAPSHOT.jar"]
 ```
 

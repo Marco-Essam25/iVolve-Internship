@@ -41,7 +41,7 @@ docker images | grep app1
 docker run -d --name container1 -p 8080:8080 app1
 docker ps
 ```
-![screenshot](screenshots/screenshot-lab3-1.png)
+![Screenshot 1](https://raw.githubusercontent.com/Marco-Essam25/iVolve-Internship/main/screenshots/Screenshot-lab3-1.png)
 
 
 ### 5. Test the Application

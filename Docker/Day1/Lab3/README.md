@@ -4,6 +4,7 @@
 Containerize a Java Spring Boot application using Docker with Maven and Java 17.
 
 ## Project Structure
+```
 Lab3/
 ├── Dockerfile
 ├── pom.xml
@@ -11,7 +12,7 @@ Lab3/
 │   └── main/java/com/example/demo/
 │       └── DemoApplication.java
 └── README.md
-
+```
 ## Steps
 
 ### 1. Clone the Application Code
